@@ -5,6 +5,63 @@ body {
 ul { padding: 0; }
 li { list-style: none; }
 
+a {
+  text-decoration: none;
+  color: #d0021b;
+}
+
+.popular-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.popular-item {
+  margin: 20px;
+  text-align: center;
+}
+
+.popular-rank {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.space-list-items {
+  margin-bottom: 7px;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+} text-align: center;
+  display: block;
+  padding: 7px 0;
+  margin: 10px auto;
+}
+
+.button:hover:enabled {
+  background: linear-gradient(#1a1a1a,#0a0a0a);
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.reset {
+  display: block;
+  border: none;
+  background: transparent;
+  color: #d0021b;
+  width: 100%;
+  text-align: center;
+}
+
+.reset:hover {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -49,3 +106,9 @@ li { list-style: none; }
   width: 150px;
   border-radius: 50%;
 }
+
+.nav { display: flex; }
+
+.nav li { margin-right: 15px; }
+
+.active { font-weight: bold; }
