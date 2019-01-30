@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import api from '../utils/api';
 
+import Loading from './Loading';
+
 function SelectLanguage( props ) {
   var languages = [ 'All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python' ];
 
@@ -88,7 +90,7 @@ class Popular extends React.Component {
         />
 
         { !this.state.repos
-          ? <h2 style={{ textAlign: 'center' }}>Loading...</h2>
+          ? <Loading text="Loading Popular Repos" />
           : <RepoGrid repos={ this.state.repos } />
         }
       </div>

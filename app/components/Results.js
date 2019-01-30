@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import api from '../utils/api';
 
 import PlayerPreview from './PlayerPreview';
+import Loading from './Loading';
 
 class Results extends Component {
   constructor( props ) {
@@ -45,7 +46,7 @@ class Results extends Component {
   render() {
     const { error, winner, loser, loading } = this.state;
 
-    if ( loading ) return <h2>Loading...</h2>;
+    if ( loading ) return <Loading text="Battling" />;
 
     if ( error ) {
       return (
